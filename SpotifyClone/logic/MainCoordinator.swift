@@ -20,7 +20,7 @@ class MainCoordinator: Coordinator {
     }
 
     /// navigate function used to ease navigation between view controllers
-    /// - Parameter flowAction: type of navigatio needed
+    /// - Parameter flowAction: enum contains type of navigatio needed
     private func navigate(_ flowAction: StepAction) {
         switch flowAction {
         case .puch(let viewController, let animated):
@@ -53,8 +53,13 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = ViewController()
+        let viewController = HomeViewController()
+        self.navigationController = .init()
+        UIApplication.shared.windows.first?.rootViewController = self.navigationController
+
+        self.navigationController.isNavigationBarHidden = false
         viewController.coordinator = self
+
         navigate(.puch(viewController: viewController, animated: false))
     }
 }

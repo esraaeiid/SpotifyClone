@@ -8,25 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		00025B8A2A91D20B9FA7FE86 /* Pods_SpotifyClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572A1F94BA0542148646E760 /* Pods_SpotifyClone.framework */; };
+		024FA45A27DB5855007757C8 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FA45927DB5855007757C8 /* NetworkLayer.swift */; };
+		027A58D627D551CE009235C5 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A58D527D551CE009235C5 /* UIView + Constraints.swift */; };
 		02B1078727B6AC5D00158FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078627B6AC5D00158FCF /* AppDelegate.swift */; };
 		02B1078927B6AC5D00158FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078827B6AC5D00158FCF /* SceneDelegate.swift */; };
-		02B1078B27B6AC5D00158FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078A27B6AC5D00158FCF /* ViewController.swift */; };
+		02B1078B27B6AC5D00158FCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078A27B6AC5D00158FCF /* HomeViewController.swift */; };
 		02B1079027B6AC5F00158FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B1078F27B6AC5F00158FCF /* Assets.xcassets */; };
 		02B1079327B6AC5F00158FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B1079127B6AC5F00158FCF /* LaunchScreen.storyboard */; };
 		02D686AA27D3783A00E1B8DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686A927D3783A00E1B8DD /* Coordinator.swift */; };
 		02D686AD27D383D700E1B8DD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686AC27D383D700E1B8DD /* MainCoordinator.swift */; };
+		02D686AF27D38FB500E1B8DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686AE27D38FB500E1B8DD /* HomeView.swift */; };
+		02D8877A27D94B7700927852 /* AppDelegateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D8877927D94B7700927852 /* AppDelegateConfigurator.swift */; };
+		02DEEEA727DCF77800920C2E /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DEEEA627DCF77800920C2E /* APIRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		024FA45927DB5855007757C8 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		027A58D527D551CE009235C5 /* UIView + Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
 		02B1078327B6AC5D00158FCF /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1078627B6AC5D00158FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1078827B6AC5D00158FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		02B1078A27B6AC5D00158FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02B1078A27B6AC5D00158FCF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		02B1078F27B6AC5F00158FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B1079227B6AC5F00158FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02B1079427B6AC5F00158FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02D686A927D3783A00E1B8DD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		02D686AC27D383D700E1B8DD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		02D686AE27D38FB500E1B8DD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		02D8877927D94B7700927852 /* AppDelegateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateConfigurator.swift; sourceTree = "<group>"; };
+		02DEEEA627DCF77800920C2E /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		4F8948510378D6D0D1961A80 /* Pods-SpotifyClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.release.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.release.xcconfig"; sourceTree = "<group>"; };
 		572A1F94BA0542148646E760 /* Pods_SpotifyClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B804CD42A4B1B9DAA015166 /* Pods-SpotifyClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyClone.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		027A58D427D55120009235C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				027A58D527D551CE009235C5 /* UIView + Constraints.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		02B1077A27B6AC5D00158FCF = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +83,9 @@
 		02B1078527B6AC5D00158FCF /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
+				02D8877727D9478B00927852 /* Supporting Files */,
+				027A58D427D55120009235C5 /* Extensions */,
 				02D686AB27D3784A00E1B8DD /* logic */,
-				02B1078627B6AC5D00158FCF /* AppDelegate.swift */,
-				02B1078827B6AC5D00158FCF /* SceneDelegate.swift */,
 				02B1078F27B6AC5F00158FCF /* Assets.xcassets */,
 				02B1079127B6AC5F00158FCF /* LaunchScreen.storyboard */,
 				02B1079427B6AC5F00158FCF /* Info.plist */,
@@ -79,10 +97,39 @@
 			isa = PBXGroup;
 			children = (
 				02D686A927D3783A00E1B8DD /* Coordinator.swift */,
-				02B1078A27B6AC5D00158FCF /* ViewController.swift */,
 				02D686AC27D383D700E1B8DD /* MainCoordinator.swift */,
+				02B1078A27B6AC5D00158FCF /* HomeViewController.swift */,
+				02D686AE27D38FB500E1B8DD /* HomeView.swift */,
 			);
 			path = logic;
+			sourceTree = "<group>";
+		};
+		02D8877727D9478B00927852 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02DEEEA527DCF74600920C2E /* Networking */,
+				02B1078827B6AC5D00158FCF /* SceneDelegate.swift */,
+				02B1078627B6AC5D00158FCF /* AppDelegate.swift */,
+				02D8877827D94B3200927852 /* AppDelegate Configurator */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02D8877827D94B3200927852 /* AppDelegate Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				02D8877927D94B7700927852 /* AppDelegateConfigurator.swift */,
+			);
+			path = "AppDelegate Configurator";
+			sourceTree = "<group>";
+		};
+		02DEEEA527DCF74600920C2E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				024FA45927DB5855007757C8 /* NetworkLayer.swift */,
+				02DEEEA627DCF77800920C2E /* APIRouter.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		18921980F2A268BD3F250CE6 /* Frameworks */ = {
@@ -114,6 +161,7 @@
 				02B1077F27B6AC5D00158FCF /* Sources */,
 				02B1078027B6AC5D00158FCF /* Frameworks */,
 				02B1078127B6AC5D00158FCF /* Resources */,
+				807BC80A3F164456FC8DBA1A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,6 +258,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		807BC80A3F164456FC8DBA1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotifyClone/Pods-SpotifyClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,11 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024FA45A27DB5855007757C8 /* NetworkLayer.swift in Sources */,
+				02DEEEA727DCF77800920C2E /* APIRouter.swift in Sources */,
+				027A58D627D551CE009235C5 /* UIView + Constraints.swift in Sources */,
 				02D686AA27D3783A00E1B8DD /* Coordinator.swift in Sources */,
-				02B1078B27B6AC5D00158FCF /* ViewController.swift in Sources */,
+				02B1078B27B6AC5D00158FCF /* HomeViewController.swift in Sources */,
 				02B1078727B6AC5D00158FCF /* AppDelegate.swift in Sources */,
+				02D686AF27D38FB500E1B8DD /* HomeView.swift in Sources */,
 				02D686AD27D383D700E1B8DD /* MainCoordinator.swift in Sources */,
 				02B1078927B6AC5D00158FCF /* SceneDelegate.swift in Sources */,
+				02D8877A27D94B7700927852 /* AppDelegateConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
