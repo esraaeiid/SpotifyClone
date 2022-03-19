@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00025B8A2A91D20B9FA7FE86 /* Pods_SpotifyClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572A1F94BA0542148646E760 /* Pods_SpotifyClone.framework */; };
-		024FA45A27DB5855007757C8 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FA45927DB5855007757C8 /* NetworkLayer.swift */; };
+		024FD57A27E4F33800B011F7 /* UINavigationController + StepAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FD57927E4F33800B011F7 /* UINavigationController + StepAction.swift */; };
+		024FD57D27E50D8500B011F7 /* RootViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FD57C27E50D8500B011F7 /* RootViewControllerPresenter.swift */; };
+		024FD58027E5175700B011F7 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024FD57F27E5175700B011F7 /* Todo.swift */; };
 		027A58D627D551CE009235C5 /* UIView + Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A58D527D551CE009235C5 /* UIView + Constraints.swift */; };
+		0283B0B127E29CDF00C70503 /* ConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0283B0B027E29CDF00C70503 /* ConnectionSettings.swift */; };
 		02B1078727B6AC5D00158FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078627B6AC5D00158FCF /* AppDelegate.swift */; };
 		02B1078927B6AC5D00158FCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078827B6AC5D00158FCF /* SceneDelegate.swift */; };
 		02B1078B27B6AC5D00158FCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B1078A27B6AC5D00158FCF /* HomeViewController.swift */; };
 		02B1079027B6AC5F00158FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B1078F27B6AC5F00158FCF /* Assets.xcassets */; };
 		02B1079327B6AC5F00158FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B1079127B6AC5F00158FCF /* LaunchScreen.storyboard */; };
+		02B9F47327E4C5A2008E6626 /* SessionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B9F47227E4C5A2008E6626 /* SessionHelpers.swift */; };
 		02D686AA27D3783A00E1B8DD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686A927D3783A00E1B8DD /* Coordinator.swift */; };
 		02D686AD27D383D700E1B8DD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686AC27D383D700E1B8DD /* MainCoordinator.swift */; };
 		02D686AF27D38FB500E1B8DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D686AE27D38FB500E1B8DD /* HomeView.swift */; };
@@ -23,8 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		024FA45927DB5855007757C8 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		024FD57927E4F33800B011F7 /* UINavigationController + StepAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController + StepAction.swift"; sourceTree = "<group>"; };
+		024FD57C27E50D8500B011F7 /* RootViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerPresenter.swift; sourceTree = "<group>"; };
+		024FD57F27E5175700B011F7 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		027A58D527D551CE009235C5 /* UIView + Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Constraints.swift"; sourceTree = "<group>"; };
+		0283B0B027E29CDF00C70503 /* ConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSettings.swift; sourceTree = "<group>"; };
 		02B1078327B6AC5D00158FCF /* SpotifyClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B1078627B6AC5D00158FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B1078827B6AC5D00158FCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +39,7 @@
 		02B1078F27B6AC5F00158FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02B1079227B6AC5F00158FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02B1079427B6AC5F00158FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B9F47227E4C5A2008E6626 /* SessionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelpers.swift; sourceTree = "<group>"; };
 		02D686A927D3783A00E1B8DD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		02D686AC27D383D700E1B8DD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		02D686AE27D38FB500E1B8DD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -54,10 +62,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		024FD57B27E4F34A00B011F7 /* Coordinator  */ = {
+			isa = PBXGroup;
+			children = (
+				02D686AC27D383D700E1B8DD /* MainCoordinator.swift */,
+				02D686A927D3783A00E1B8DD /* Coordinator.swift */,
+				024FD57C27E50D8500B011F7 /* RootViewControllerPresenter.swift */,
+			);
+			path = "Coordinator ";
+			sourceTree = "<group>";
+		};
+		024FD57E27E5174B00B011F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				024FD57F27E5175700B011F7 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		027A58D427D55120009235C5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				027A58D527D551CE009235C5 /* UIView + Constraints.swift */,
+				024FD57927E4F33800B011F7 /* UINavigationController + StepAction.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -83,9 +110,11 @@
 		02B1078527B6AC5D00158FCF /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
+				024FD57E27E5174B00B011F7 /* Model */,
 				02D8877727D9478B00927852 /* Supporting Files */,
 				027A58D427D55120009235C5 /* Extensions */,
-				02D686AB27D3784A00E1B8DD /* logic */,
+				024FD57B27E4F34A00B011F7 /* Coordinator  */,
+				02D686AB27D3784A00E1B8DD /* Controller */,
 				02B1078F27B6AC5F00158FCF /* Assets.xcassets */,
 				02B1079127B6AC5F00158FCF /* LaunchScreen.storyboard */,
 				02B1079427B6AC5F00158FCF /* Info.plist */,
@@ -93,15 +122,13 @@
 			path = SpotifyClone;
 			sourceTree = "<group>";
 		};
-		02D686AB27D3784A00E1B8DD /* logic */ = {
+		02D686AB27D3784A00E1B8DD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				02D686A927D3783A00E1B8DD /* Coordinator.swift */,
-				02D686AC27D383D700E1B8DD /* MainCoordinator.swift */,
 				02B1078A27B6AC5D00158FCF /* HomeViewController.swift */,
 				02D686AE27D38FB500E1B8DD /* HomeView.swift */,
 			);
-			path = logic;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		02D8877727D9478B00927852 /* Supporting Files */ = {
@@ -126,8 +153,9 @@
 		02DEEEA527DCF74600920C2E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				024FA45927DB5855007757C8 /* NetworkLayer.swift */,
+				0283B0B027E29CDF00C70503 /* ConnectionSettings.swift */,
 				02DEEEA627DCF77800920C2E /* APIRouter.swift */,
+				02B9F47227E4C5A2008E6626 /* SessionHelpers.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -282,16 +310,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024FA45A27DB5855007757C8 /* NetworkLayer.swift in Sources */,
 				02DEEEA727DCF77800920C2E /* APIRouter.swift in Sources */,
 				027A58D627D551CE009235C5 /* UIView + Constraints.swift in Sources */,
 				02D686AA27D3783A00E1B8DD /* Coordinator.swift in Sources */,
 				02B1078B27B6AC5D00158FCF /* HomeViewController.swift in Sources */,
 				02B1078727B6AC5D00158FCF /* AppDelegate.swift in Sources */,
+				024FD57D27E50D8500B011F7 /* RootViewControllerPresenter.swift in Sources */,
 				02D686AF27D38FB500E1B8DD /* HomeView.swift in Sources */,
+				024FD58027E5175700B011F7 /* Todo.swift in Sources */,
+				02B9F47327E4C5A2008E6626 /* SessionHelpers.swift in Sources */,
+				0283B0B127E29CDF00C70503 /* ConnectionSettings.swift in Sources */,
 				02D686AD27D383D700E1B8DD /* MainCoordinator.swift in Sources */,
 				02B1078927B6AC5D00158FCF /* SceneDelegate.swift in Sources */,
 				02D8877A27D94B7700927852 /* AppDelegateConfigurator.swift in Sources */,
+				024FD57A27E4F33800B011F7 /* UINavigationController + StepAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

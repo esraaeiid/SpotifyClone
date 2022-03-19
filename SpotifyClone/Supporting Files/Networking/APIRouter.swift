@@ -5,15 +5,15 @@
 //  Created by Esraa on 12/03/2022.
 //
 
-///[https://www.youtube.com/watch?v=irt20ODkI3o]
+/// [https://www.youtube.com/watch?v=irt20ODkI3o]
 
 import Foundation
 import Alamofire
 
-
 // MARK: - APIRouter Structure
 
 struct APIRouterStructure: URLRequestConvertible {
+
 
     let apiRouter: APIRouter
 
@@ -21,10 +21,9 @@ struct APIRouterStructure: URLRequestConvertible {
     /// - Returns: HTTPHeaders Dictionary 
     func defaultHeaders() -> HTTPHeaders {
         var headersDictionary = [
-            "Accept" : "application/json",
-            "Origin" : "some origin"
+            "Accept": "application/json",
+            "Origin": "some origin"
         ]
-
 
         if let additionalHeaders = apiRouter.additionalHeaders {
             let additionalHeadersDictionary = additionalHeaders.dictionary
@@ -33,10 +32,8 @@ struct APIRouterStructure: URLRequestConvertible {
             }
         }
 
-
         return HTTPHeaders(headersDictionary)
     }
-
 
     func asURLRequest() throws -> URLRequest {
         let url = try apiRouter.baseURL.asURL()
@@ -45,21 +42,33 @@ struct APIRouterStructure: URLRequestConvertible {
         urlRequest.httpMethod = apiRouter.method.rawValue
         urlRequest.timeoutInterval = apiRouter.timeout
         urlRequest.headers = defaultHeaders()
+
+        if let body = apiRouter.body {
+            do {
+                let data = try JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
+                urlRequest.httpBody = data
+            } catch {
+                print("Fail to generate json data!")
+            }
+        }
+
+        if let params = apiRouter.parameters {
+          urlRequest = try apiRouter.encoding.encode(urlRequest, with: params)
+        }
+
+        print("URL Request is: \(urlRequest)")
         return urlRequest
     }
 
-
 }
 
-
-
-//MARK: - APIRouter
+// MARK: - APIRouter
 enum APIRouter {
 
-    ///Endpoints
+    /// Endpoints
     case todos
 
-    ///baseURL
+    /// baseURL
     var baseURL: String {
         switch self {
         case .todos:
@@ -67,7 +76,7 @@ enum APIRouter {
         }
     }
 
-    ///path
+    /// path
     var path: String {
         switch self {
         case .todos:
@@ -75,7 +84,7 @@ enum APIRouter {
         }
     }
 
-    ///methods
+    /// methods
     var method: HTTPMethod {
         switch self {
         case .todos:
@@ -91,16 +100,15 @@ enum APIRouter {
         }
     }
 
-    ///parameters
-    var parameters: Parameters?{
+    /// parameters
+    var parameters: Parameters? {
         switch self {
         case .todos:
             return nil
         }
     }
 
-
-    ///body
+    /// body
     var body: Parameters? {
         switch self {
         case .todos:
@@ -108,8 +116,7 @@ enum APIRouter {
         }
     }
 
-
-    ///additional headers
+    /// additional headers
     var additionalHeaders: HTTPHeaders? {
         switch self {
         case .todos:
@@ -117,13 +124,12 @@ enum APIRouter {
         }
     }
 
-    ///time-out
-    var timeout: TimeInterval{
+    /// time-out
+    var timeout: TimeInterval {
         switch self {
         default:
             return 20
         }
     }
-
 
 }
